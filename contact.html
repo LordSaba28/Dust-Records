@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking — Dust Records</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dust">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/images/DUST_flex.png" alt="DUST" />
+        </a>
+        <div class="navbar-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search songs or artists" aria-label="Search" />
+        </div>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+          <i class="fa-solid fa-bars text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMain">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html#artists">Music</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#artists">Artists</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Label</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Booking</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTACT / BOOKING -->
+    <section class="contact-section" style="padding-top: 8rem;">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5"> 
+            <div class="section-label mb-3 font-mono">Get in Touch</div>
+            <h1 class="section-title mb-4">Let's talk music,<br />culture & bookings.</h1>
+            <p class="text-ash mb-4">Whether you're booking an artist, planning a festival, or exploring a brand partnership — share the details and we'll get back within two business days.</p>
+
+            <div class="contact-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>bookings@dustrecords.com</span>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>The Mansion by Charissa before Mosheshe Estate<br> <span class="accent"></span>Airport Road, Effurun, Delta, Nigeria</span></span>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Response within 2 business days</span>
+            </div>
+
+            <div class="mt-5">
+              <div class="section-label mb-3 font-mono">How it works</div>
+              <div class="d-flex align-items-start mb-2"><span class="font-mono text-dust me-3">01</span> We review your request</div>
+              <div class="d-flex align-items-start mb-2"><span class="font-mono text-dust me-3">02</span> We confirm availability and terms</div>
+              <div class="d-flex align-items-start"><span class="font-mono text-dust me-3">03</span> Contracts, then the show</div>
+            </div>
+
+            <button type="button" id="formSwitchBtn" class="form-switch-btn btn-dust">Switch to General Inquiry</button>
+          </div>
+
+          <div class="col-lg-7">
+            <!-- Form viewport with invisible frame + depth shadow -->
+            <div class="form-viewport">
+              <div class="form-slider">
+                <!-- FORM 1: Full Booking -->
+                <form class="contact-form" onsubmit="return false;">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label class="form-label">Artist</label>
+                      <select class="form-select" required>
+                        <option value="" selected disabled>Select an artist</option>
+                        <option>$ABA</option>
+                        <option>ESOUNDS</option>
+                        <option>KAIRO</option>
+                        <option>KAMI</option>
+                        <option>KHALIA</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">First name</label>
+                      <input type="text" class="form-control" placeholder="First name" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Last name</label>
+                      <input type="text" class="form-control" placeholder="Last name" required />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Email</label>
+                      <input type="email" class="form-control" placeholder="you@example.com" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Event type</label>
+                      <select class="form-select" required>
+                        <option value="" selected disabled>Select type</option>
+                        <option>Festival</option>
+                        <option>Concert / Headline show</option>
+                        <option>Club night</option>
+                        <option>Private event</option>
+                        <option>Corporate event</option>
+                        <option>Brand partnership</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Type of location</label>
+                      <select class="form-select">
+                        <option value="" selected disabled>Select venue type</option>
+                        <option>Stadium</option>
+                        <option>Club</option>
+                        <option>Bar</option>
+                        <option>Arena</option>
+                        <option>Outdoor</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Location</label>
+                      <input type="text" class="form-control" placeholder="Venue, City">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Event date</label>
+                      <input type="date" class="form-control" />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Description</label>
+                      <textarea class="form-control" placeholder="Brief overview of the event…"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Additional details</label>
+                      <textarea class="form-control" placeholder="Set length, audience size, budget range, production needs…"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Message <span class="text-ash">(optional)</span></label>
+                      <textarea class="form-control" placeholder="Anything else we should know?"></textarea>
+                    </div>
+                    <div class="col-12 mt-2"><button type="submit" class="btn-dust w-100">Send booking request</button></div>
+                  </div>
+                </form>
+
+                <!-- FORM 2: General / Alternate -->
+                <form class="contact-form" onsubmit="return false;">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label class="form-label">Inquiry type</label>
+                      <select class="form-select">
+                        <option>General question</option>
+                        <option>Press / Media</option>
+                        <option>Partnership</option>
+                        <option>Artist submission</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Full name</label>
+                      <input type="text" class="form-control" placeholder="Your name" />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Email</label>
+                      <input type="email" class="form-control" placeholder="you@example.com" />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Subject</label>
+                      <input type="text" class="form-control" placeholder="What's this about?" />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Message</label>
+                      <textarea class="form-control" style="min-height:160px;" placeholder="Tell us more…"></textarea>
+                    </div>
+                    <div class="col-12 mt-2"><button type="submit" class="btn-dust w-100">Send message</button></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <p class="text-ash small mt-3">We reply to every request within 2 business days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-dust">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="footer-brand">DUST</div>
+            <div class="footer-est font-mono">RECORDS · EST. 2000</div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0 text-md-center">
+            <nav class="footer-nav">
+              <a href="index.html">Home</a>
+              <a href="index.html#artists">Music</a>
+              <a href="index.html#artists">Artists</a>
+              <a href="about.html">Label</a>
+              <a href="contact.html">Booking</a>
+            </nav>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <div class="footer-socials">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-soundcloud"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>© 2026 Dust Records. All rights reserved.</div>
+          <div class="footer-tagline font-mono">Keep Digging.</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky pulsing chatbot -->
+    <button class="chatbot-btn" aria-label="Open chat" title="Chat with Dust">
+      <i class="fa-solid fa-comment"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

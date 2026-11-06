@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@theme {
+  --color-bg: #070707;
+  --color-surface: #111111;
+  --color-elevated: #1a1a1a;
+  --color-fg: #f2ede4;
+  --color-muted: #a39a8c;
+  --color-gold: #c9a86c;
+  --color-gold-soft: #e8d5b5;
+  --color-line: #2a2622;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --radius-card: 0.85rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: #c9a86c;
+    color: #111111;
+  }
+}
+
+@utility label-kicker {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+input.seek {
+  appearance: none;
+  background: transparent;
+}
+input.seek::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--color-elevated);
+}
+input.seek::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -5px;
+  border-radius: 999px;
+  background: var(--color-gold);
+}
+input.seek::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--color-elevated);
+}
+input.seek::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
