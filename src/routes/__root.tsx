@@ -13,12 +13,23 @@ export const Route = createRootRoute({
       { title: "Dust Records" },
       {
         name: "description",
-        content: "Dust Records — independent music from Effurun. Artists, releases, and bookings.",
+        content:
+          "Dust Records — independent music from Effurun. Artists, releases, and bookings.",
       },
       { name: "theme-color", content: "#070707" },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap",
+      },
       { rel: "stylesheet", href: appCss },
       { rel: "manifest", href: "/__grok/manifest.webmanifest" },
       { rel: "apple-touch-icon", href: "/__grok/icon-180.png" },

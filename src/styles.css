@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap");
 
 @theme {
   --color-bg: #070707;
